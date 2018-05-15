@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>EMS</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/w3.css">
+	<script defer src="js/fa-solid.min.js"></script>
+	<script defer src="js/fontawesome.min.js"></script>
+	<script src="js/common-script.js"></script>  
+</head>
+<body onload="resizeIFrameToFitContent('myFrame');" onresize="resizeIFrameToFitContent('myFrame');">
+
+<!-- MENU START -->
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-blue-grey" style="width:200px;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+  <a href="getTesting1" target="myFrame" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-home"></i> 我的户口</a>
+  <a href="getTesting2" target="myFrame" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-envelope"></i> 功能1</a>
+  <a href="getTesting3" target="myFrame" class="w3-bar-item w3-button" onclick="w3_close()"><i class="fas fa-heart"></i> 功能2</a>
+  
+  <!-- dropdownlist start -->
+  <button class="w3-button w3-block w3-left-align" onclick="ddlFunc('ddl1')"><i class="fas fa-file"></i> 管理1 <i class="fas fa-caret-down"></i></button>
+  <div id="ddl1" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button" onclick="w3_close()">&nbsp;&nbsp;&nbsp;<i class="fas fa-hand-point-right"></i> 入院</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="w3_close()">&nbsp;&nbsp;&nbsp;<i class="fas fa-hand-point-left"></i> 退院</a>
+  </div>
+  <!-- dropdownlist end -->
+  
+  <!-- dropdownlist start -->
+  <button class="w3-button w3-block w3-left-align" onclick="ddlFunc('ddl2')"><i class="fas fa-file"></i> 管理2 <i class="fas fa-caret-down"></i></button>
+  <div id="ddl2" class="w3-hide w3-white w3-card">
+    <a href="#" class="w3-bar-item w3-button" onclick="w3_close()">&nbsp;&nbsp;&nbsp;<i class="fas fa-hand-point-right"></i> 管理員工</a>
+    <a href="#" class="w3-bar-item w3-button" onclick="w3_close()">&nbsp;&nbsp;&nbsp;<i class="fas fa-hand-point-left"></i> 管理藥物</a>
+  </div>
+  <!-- dropdownlist end -->
+</div>
+<!-- MENU END -->
+
+<!-- CONTENT START -->
+<div class="w3-main" style="margin-left:200px">
+	<!-- TOP BANNER -->
+	<div class="w3-teal">
+	  <div class="w3-container" id="myBanner">
+	    <button class="w3-button w3-teal w3-hide-large" onclick="w3_open()"><i class="fas fa-bars"></i></button><span class="mycss-header">Elderly Management System</span>
+	  </div>
+	</div>
+
+	<!-- CONTENT FRAME -->
+	<div id="myContent" >
+		<iframe src="getTesting1" id="myFrame" name="myFrame" onload="resizeIFrameToFitContent('myFrame');"></iframe>
+	</div>
+</div>
+<!-- CONTENT END -->
+   
+</body>
+</html>

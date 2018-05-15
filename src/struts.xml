@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+  <package name="default" extends="struts-default" namespace="/">
+    <action name="getTesting" class="ems.TestingAction">
+      <result name="success">jsp/index.html</result>
+      <result name="error">jsp/Error.jsp</result>
+    </action>
+    <action name="getTesting1" class="ems.TestingAction">
+      <result name="success">jsp/a.html</result>
+      <result name="error">jsp/Error.jsp</result>
+    </action>
+    <action name="getTesting2" class="ems.TestingAction">
+      <result name="success">jsp/b.html</result>
+      <result name="error">jsp/Error.jsp</result>
+    </action>
+    <action name="getTesting3" class="ems.TestingAction">
+      <result name="success">jsp/c.html</result>
+      <result name="error">jsp/Error.jsp</result>
+    </action>
+  </package>
+</struts>
